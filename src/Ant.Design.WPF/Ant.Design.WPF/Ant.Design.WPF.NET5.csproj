@@ -1,0 +1,127 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Antd</AssemblyName>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <RootNamespace>Antd</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Ant.Design.WPF\DebugNET5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NET5</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\Animations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\AntIcons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\CheckBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\ComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\ContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\Control.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\Input.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\PasswordBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\RadioButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Controls\ToolTip.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Converters.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Alert.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Avatar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\CheckableTag.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ContentControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Heading.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Hyperlink.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\RadioButtonGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Spin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Switch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\TabControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Tag.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\WindowButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\WindowButtons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\WindowCommands.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+  <Import Project="..\Ant.Design.WPF.Shared\Ant.Design.WPF.Shared.projitems" Label="Shared" />
+
+
+</Project>

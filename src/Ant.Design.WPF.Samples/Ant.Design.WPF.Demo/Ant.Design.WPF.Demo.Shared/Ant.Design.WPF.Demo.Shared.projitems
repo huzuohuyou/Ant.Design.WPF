@@ -7,30 +7,19 @@
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>AntdDemo</Import_RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Bootstrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\CodeBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\StringToCodeConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\StringToMarkDownConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IShell.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AlertViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AvatarViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ButtonViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BadgeViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CheckBoxViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\IconViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\InputViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RadioButtonViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SelectViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ShellViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SpinViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SwitchViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TagViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ToolTipViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
@@ -45,59 +34,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\AlertView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\AvatarView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\BadgeView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\ButtonView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\CheckBoxView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\IconView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\RadioButtonView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\SelectView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\ShellView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\SpinView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\SwitchView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\TagView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\InputView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\ToolTipView.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\MainWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

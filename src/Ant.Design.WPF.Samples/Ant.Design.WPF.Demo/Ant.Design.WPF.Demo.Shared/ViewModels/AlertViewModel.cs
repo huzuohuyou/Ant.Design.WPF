@@ -1,14 +1,14 @@
-﻿using System.ComponentModel.Composition;
-using Caliburn.Micro;
+﻿using Prism.Events;
+using Prism.Regions;
+using Prism.Services.Dialogs;
 
 namespace AntdDemo.ViewModels
 {
-    [Export(typeof(IScreen))]
-    internal class AlertViewModel : Screen
+    internal class AlertViewModel : ViewModelBase
     {
-        public AlertViewModel()
+        public AlertViewModel(IRegionManager regionManager, IDialogService dialogService, IEventAggregator ea)
+           : base(regionManager, dialogService, ea)
         {
-            DisplayName = "Alert";
         }
     }
 }

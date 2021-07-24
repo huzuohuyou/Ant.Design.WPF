@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>AntdDemo</AssemblyName>
+    <RootNamespace>AntdDemo</RootNamespace>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;NET5</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="App.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\DramaEnglish\DramaEnglish.Infrastructure\DramaEnglish.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Ant.Design.WPF\Ant.Design.WPF\Ant.Design.WPF.NET5.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\Ant.Design.WPF.Demo.Shared\Ant.Design.WPF.Demo.Shared.projitems" Label="Shared" />
+
+
+</Project>

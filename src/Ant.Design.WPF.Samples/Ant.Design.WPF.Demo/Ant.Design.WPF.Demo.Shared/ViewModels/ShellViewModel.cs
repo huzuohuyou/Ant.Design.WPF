@@ -1,16 +1,14 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using Caliburn.Micro;
+﻿using Prism.Events;
+using Prism.Regions;
+using Prism.Services.Dialogs;
 
 namespace AntdDemo.ViewModels
 {
-    [Export(typeof(IShell))]
-    internal class ShellViewModel : Conductor<IScreen>.Collection.OneActive
+    public class ShellViewModel : ViewModelBase
     {
-        [ImportingConstructor]
-        protected ShellViewModel([ImportMany] IEnumerable<IScreen> screens)
+        public ShellViewModel(IRegionManager regionManager, IDialogService dialogService, IEventAggregator ea)
+           : base(regionManager, dialogService, ea)
         {
-            Items.AddRange(screens);
         }
     }
 }
