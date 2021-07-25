@@ -20,6 +20,9 @@ namespace AntdDemo.ViewModels
 
         private void Subscribe(MenuItem menuItem)
         {
+            if (menuItem.Code == null)
+                return;
+
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             Assembly serviceAss = Assembly.Load(assemblyName);
             Type[] serviceTypes = serviceAss.GetTypes();
