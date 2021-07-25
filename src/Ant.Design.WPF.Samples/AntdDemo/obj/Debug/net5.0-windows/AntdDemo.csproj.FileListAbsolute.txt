@@ -35,11 +35,11 @@ D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-wi
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo.pdb
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo.genruntimeconfig.cache
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\App.baml
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\ShellComponent.baml
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\ShellComponent.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\NavigationComponent.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\NavigationComponent.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HelloAntdComponent.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HelloAntdComponent.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HeaderComponent.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HeaderComponent.baml
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\AlertComponent.g.cs
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\AlertComponent.baml

@@ -1,8 +1,13 @@
-﻿using MicrosoftToDO.Common;
+﻿using AntdDemo.EventAggregators;
+using MicrosoftToDO.Common;
+using Prism.Commands;
 using Prism.Events;
 using Prism.Regions;
 using Prism.Services.Dialogs;
+using System;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Reflection;
 
 namespace AntdDemo.ViewModels
 {
@@ -86,7 +91,7 @@ namespace AntdDemo.ViewModels
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Tree树形控件", Count = 2 });
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "反馈", Count = 2 });
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "---------", Count = 2 });
-            MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Alert警告提示", Count = 2 });
+            MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Alert警告提示", Count = 2, Code = "AlertComponent" });
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Drawer抽屉", Count = 2 });
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Message全局提示", Count = 2 });
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "Modal对话框", Count = 2 });
@@ -103,10 +108,22 @@ namespace AntdDemo.ViewModels
             MenuItems.Add(new MenuItem() { Icon = "", BackColor = "#1890ff", Name = "ConfigProvider全局化配置", Count = 2 });
 
         }
+
+        
         #endregion
 
         #region 命令
 
+        public DelegateCommand<object[]> SelectedCommand => new((a) =>
+        {
+            var s = (a[0] as MenuItem);
+            var menuItem = (a[0] as MenuItem);
+            Publish(menuItem);
+        });
+
+        private void Publish(MenuItem menuItem) {
+            EventAggregator.GetEvent<SwitchViewEventAggregator>().Publish(menuItem); 
+        }
         #endregion
 
         #region 方法函数

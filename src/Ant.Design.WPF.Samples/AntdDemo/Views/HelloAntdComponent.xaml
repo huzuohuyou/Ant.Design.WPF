@@ -23,6 +23,6 @@
         <!--<DockPanel  Grid.Column="0" Grid.Row="1" Background="Red"></DockPanel>-->
         <ContentControl Grid.Column="0" Grid.Row="1" prism:RegionManager.RegionName="NavigationComponent" Margin="0"/>
         <ContentControl Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" prism:RegionManager.RegionName="HeaderComponent" Margin="0"/>
-        <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ShellComponent" Margin="0"/>
+        <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ControlDetailComponent" Margin="0"/>
     </Grid>
 </Window>

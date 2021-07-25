@@ -4,9 +4,9 @@ using Prism.Services.Dialogs;
 
 namespace AntdDemo.ViewModels
 {
-    internal class AlertViewModel : ViewModelBase
+    internal class AlertComponentViewModel : ViewModelBase
     {
-        public AlertViewModel(IRegionManager regionManager, IDialogService dialogService, IEventAggregator ea)
+        public AlertComponentViewModel(IRegionManager regionManager, IDialogService dialogService, IEventAggregator ea)
            : base(regionManager, dialogService, ea)
         {
         }

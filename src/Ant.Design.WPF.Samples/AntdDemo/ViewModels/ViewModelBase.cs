@@ -5,6 +5,7 @@ using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Services.Dialogs;
 using System;
+using System.Reflection;
 
 namespace AntdDemo.ViewModels
 {
@@ -41,7 +42,8 @@ namespace AntdDemo.ViewModels
             RegionManager = regionManager;
             DialogService = dialogService;
             EventAggregator = eventAggregator;
-            PrismRegister.RegisterViewWithRegion(regionManager);
+            var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
+            PrismRegister.RegisterViewWithRegion(regionManager, assemblyName);
         }
         #endregion
 

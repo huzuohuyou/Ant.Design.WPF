@@ -6,7 +6,10 @@
              xmlns:Antd="clr-namespace:Antd.Controls;assembly=Antd"
              xmlns:local="using:AntdDemo.Views"
              mc:Ignorable="d"
-             Width="930"
-             Height="600">
-    <TabControl x:Name="Items" TabStripPlacement="Left" />
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <ContentControl prism:RegionManager.RegionName="ControlDetailComponent"></ContentControl>
+    </Grid>
 </Antd:Window>

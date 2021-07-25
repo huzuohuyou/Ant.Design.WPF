@@ -4,11 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AntdDemo.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <ScrollViewer Background="#F5F5F5">
 
         <ListBox BorderThickness="0" ItemsSource="{Binding MenuItems}">
+            <i:Interaction.Triggers>
+                <!-- This event trigger will execute the action when the corresponding event is raised by the ListBox. -->
+                <i:EventTrigger EventName="SelectionChanged">
+                    <!-- This action will invoke the selected command in the view model and pass the parameters of the event to it. -->
+                    <prism:InvokeCommandAction Command="{Binding SelectedCommand}" TriggerParameterPath="AddedItems"  />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -33,7 +43,7 @@
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <!--<Setter TargetName="bd1" Property="Background" Value="#FFF5F4F4" />-->
-                                        <!--<Setter TargetName="fc1" Property="Background" Value="#5DB2FF" />--> 
+                                        <!--<Setter TargetName="fc1" Property="Background" Value="#5DB2FF" />-->
                                         <Setter Property="Foreground" Value="#5DB2FF" />
                                     </Trigger>
                                     <Trigger Property="IsSelected" Value="True">
@@ -57,18 +67,21 @@
                     <DockPanel
                             Margin="10,0"
                             Background="Transparent"
-                            LastChildFill="False">
+                            LastChildFill="False" 
+                            >
                         <TextBlock Style="{StaticResource iconTextBlockStyle}" Text="{Binding Icon}" />
                         <TextBlock
                                 Margin="10,0,0,0"
                                 VerticalAlignment="Center"
                                 FontSize="14"
-                                Text="{Binding Name}" />
+                                Text="{Binding Name}" 
+                           />
+
                         <TextBlock
                                 VerticalAlignment="Center"
                                 DockPanel.Dock="Right"
                                 FontWeight="Light"
-                                Text="{Binding Count}" />
+                                Text="{Binding Code}" />
                     </DockPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

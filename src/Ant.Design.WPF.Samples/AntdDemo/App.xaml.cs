@@ -28,7 +28,8 @@ namespace AntdDemo
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            PrismRegister.RegisterTypes(containerRegistry);
+            var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
+            PrismRegister.RegisterTypes(containerRegistry, assemblyName);
             //RegisterViewWithRegion(containerRegistry);
         }
 
