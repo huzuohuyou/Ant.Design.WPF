@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\AlertViewModel.cs" />
+    <Compile Remove="ViewModels\AvatarViewModel.cs" />
+    <Compile Remove="ViewModels\BadgeViewModel.cs" />
+    <Compile Remove="ViewModels\ButtonViewModel.cs" />
+    <Compile Remove="ViewModels\CheckBoxViewModel.cs" />
+    <Compile Remove="ViewModels\IconViewModel.cs" />
+    <Compile Remove="ViewModels\InputViewModel.cs" />
+    <Compile Remove="ViewModels\MainWindowViewModel.cs" />
+    <Compile Remove="ViewModels\RadioButtonViewModel.cs" />
+    <Compile Remove="ViewModels\SelectViewModel.cs" />
+    <Compile Remove="ViewModels\SpinViewModel.cs" />
+    <Compile Remove="ViewModels\SwitchViewModel.cs" />
+    <Compile Remove="ViewModels\TagViewModel.cs" />
+    <Compile Remove="ViewModels\ToolTipViewModel.cs" />
+    <Compile Remove="Views\MainWindow.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Views\AlertView.xaml" />
+    <Page Remove="Views\AvatarView.xaml" />
+    <Page Remove="Views\BadgeView.xaml" />
+    <Page Remove="Views\ButtonView.xaml" />
+    <Page Remove="Views\CheckBoxView.xaml" />
+    <Page Remove="Views\IconView.xaml" />
+    <Page Remove="Views\InputView.xaml" />
+    <Page Remove="Views\MainWindow.xaml" />
+    <Page Remove="Views\RadioButtonView.xaml" />
+    <Page Remove="Views\SelectView.xaml" />
+    <Page Remove="Views\SpinView.xaml" />
+    <Page Remove="Views\SwitchView.xaml" />
+    <Page Remove="Views\TagView.xaml" />
+    <Page Remove="Views\ToolTipView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DramaEnglish\DramaEnglish.Infrastructure\DramaEnglish.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Ant.Design.WPF\Ant.Design.WPF\Ant.Design.WPF.NET5.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\CodeBox.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

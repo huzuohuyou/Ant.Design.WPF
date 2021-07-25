@@ -21,12 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ant.Design.WPF.Demo.NET5", 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ant.Design.WPF.Demo.Shared", "Ant.Design.WPF.Samples\Ant.Design.WPF.Demo\Ant.Design.WPF.Demo.Shared\Ant.Design.WPF.Demo.Shared.shproj", "{B04F18B7-A1BF-4E55-8EB6-F23C959381C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntdDemo", "Ant.Design.WPF.Samples\AntdDemo\AntdDemo.csproj", "{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Ant.Design.WPF\Ant.Design.WPF.Shared\Ant.Design.WPF.Shared.projitems*{308a03bc-f30e-4a3d-8dcc-faaad5d85358}*SharedItemsImports = 13
 		Ant.Design.WPF\Ant.Design.WPF.Shared\Ant.Design.WPF.Shared.projitems*{4dfc82b2-d167-4f97-a63f-10a663588fee}*SharedItemsImports = 5
-		Ant.Design.WPF.Samples\Ant.Design.WPF.Demo\Ant.Design.WPF.Demo.Shared\Ant.Design.WPF.Demo.Shared.projitems*{b04f18b7-a1bf-4e55-8eb6-f23c959381c4}*SharedItemsImports = 13
-		Ant.Design.WPF.Samples\Ant.Design.WPF.Demo\Ant.Design.WPF.Demo.Shared\Ant.Design.WPF.Demo.Shared.projitems*{b33d5523-d829-4772-9d09-c0d9ef714f62}*SharedItemsImports = 5
 		Ant.Design.WPF\Ant.Design.WPF.Shared\Ant.Design.WPF.Shared.projitems*{dc452a4c-9c83-43ac-95db-6077c3812027}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +50,10 @@ Global
 		{B33D5523-D829-4772-9D09-C0D9EF714F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B33D5523-D829-4772-9D09-C0D9EF714F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B33D5523-D829-4772-9D09-C0D9EF714F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +65,7 @@ Global
 		{4DFC82B2-D167-4F97-A63F-10A663588FEE} = {559D525B-9509-4A90-AA19-3F8BFE6261AA}
 		{B33D5523-D829-4772-9D09-C0D9EF714F62} = {D7B9581B-7DD1-45B5-AC63-A1D14704107E}
 		{B04F18B7-A1BF-4E55-8EB6-F23C959381C4} = {D7B9581B-7DD1-45B5-AC63-A1D14704107E}
+		{73C5EE3F-F3FB-4E5E-9203-2A1377FC78D5} = {D7B9581B-7DD1-45B5-AC63-A1D14704107E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F2BEB78-D04C-4D20-8E1E-45C75C57546F}
