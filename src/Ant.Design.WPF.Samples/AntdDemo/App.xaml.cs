@@ -1,8 +1,12 @@
-﻿using DramaEnglish.Infrastructure.Register;
+﻿using AntdDemo.Views;
+using DramaEnglish.Infrastructure.Register;
 using DryIoc;
 using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Regions;
+using System;
+using System.Linq;
+using System.Reflection;
 using System.Windows;
 
 namespace AntdDemo
@@ -15,18 +19,31 @@ namespace AntdDemo
         protected override Window CreateShell()
         {
 
-            return Container.Resolve<MainWindow>();
+            return Container.Resolve<HelloAntdComponent>();
         }
+
         public App()
         {
         }
-        public App(IRegionManager regionManager)
-        {
-            //regionManager.RegisterViewWithRegion("LoginRegion", typeof(LoginComponent));
-        }
+
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             PrismRegister.RegisterTypes(containerRegistry);
+            //RegisterViewWithRegion(containerRegistry);
+        }
+
+        private void RegisterViewWithRegion(IContainerRegistry containerRegistry) {
+            var conterEx = containerRegistry as IContainerExtension;
+            var regionManager = conterEx.Resolve<IRegionManager>();
+
+            Assembly serviceAss = Assembly.Load("AntdDemo");
+            Type[] serviceTypes = serviceAss.GetTypes();
+
+            var contents = serviceTypes.ToList().Where(r => r.Name.EndsWith("Component"));
+            foreach (var item in contents)
+            {
+                regionManager.RegisterViewWithRegion(item.Name, item);
+            }
         }
     }
 }

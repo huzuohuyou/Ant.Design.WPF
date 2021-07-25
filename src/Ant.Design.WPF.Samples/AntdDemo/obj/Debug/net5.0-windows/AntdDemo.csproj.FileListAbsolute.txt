@@ -19,12 +19,10 @@ D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\bin\Debug\net5.0-wi
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\bin\Debug\net5.0-windows\Antd.pdb
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo.csproj.AssemblyReference.cache
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Themes\Generic.baml
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\MainWindow.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\App.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo_MarkupCompile.cache
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo_MarkupCompile.lref
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\MainWindow.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Themes\CodeBox.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo.g.resources
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\AntdDemo.GeneratedMSBuildEditorConfig.editorconfig
@@ -39,3 +37,9 @@ D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-wi
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\App.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\ShellComponent.baml
 D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\ShellComponent.g.cs
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\NavigationComponent.g.cs
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\NavigationComponent.baml
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HelloAntdComponent.g.cs
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HelloAntdComponent.baml
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HeaderComponent.g.cs
+D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\Views\HeaderComponent.baml

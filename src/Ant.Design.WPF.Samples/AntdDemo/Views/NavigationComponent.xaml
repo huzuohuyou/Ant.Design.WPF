@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="AntdDemo.Views.NavigationComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AntdDemo.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <ScrollViewer Background="#F5F5F5">
+
+        <ListBox BorderThickness="0" ItemsSource="{Binding MenuItems}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="Height" Value="45" />
+                    <Setter Property="Margin" Value="0,2,0,0" />
+                    <Setter Property="Foreground" Value="#262626" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                <Grid>
+                                    <Border x:Name="bd1" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                    <Border
+                                            x:Name="bd2"
+                                            Margin="5,8"
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                    <ContentPresenter
+                                            HorizontalAlignment="Stretch"
+                                            RecognizesAccessKey="True"
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                </Grid>
+
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <!--<Setter TargetName="bd1" Property="Background" Value="#FFF5F4F4" />-->
+                                        <!--<Setter TargetName="fc1" Property="Background" Value="#5DB2FF" />--> 
+                                        <Setter Property="Foreground" Value="#5DB2FF" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <!--<Setter Property="FontWeight" Value="Bold" />-->
+                                        <Setter Property="Foreground" Value="{Binding BackColor}" />
+                                        <Setter TargetName="bd1" Property="Opacity" Value="0.1" />
+                                        <Setter TargetName="bd1" Property="Background" Value="{Binding BackColor}" />
+                                        <Setter TargetName="bd2" Property="BorderThickness" Value="2,0,0,0" />
+                                        <Setter TargetName="bd2" Property="BorderBrush" Value="{Binding BackColor}" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+
+            <!--  listbox的子项数据模板  -->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel
+                            Margin="10,0"
+                            Background="Transparent"
+                            LastChildFill="False">
+                        <TextBlock Style="{StaticResource iconTextBlockStyle}" Text="{Binding Icon}" />
+                        <TextBlock
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Text="{Binding Name}" />
+                        <TextBlock
+                                VerticalAlignment="Center"
+                                DockPanel.Dock="Right"
+                                FontWeight="Light"
+                                Text="{Binding Count}" />
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </ScrollViewer>
+</UserControl>

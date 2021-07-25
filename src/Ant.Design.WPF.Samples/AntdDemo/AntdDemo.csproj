@@ -25,6 +25,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\iconfont.ttf" />
+    <None Remove="Resources\alter.png" />
+    <None Remove="Resources\KDpgvguMpGfqaHPjicRK.jpg" />
+    <None Remove="Resources\KDpgvguMpGfqaHPjicRK.png" />
+    <None Remove="Resources\KDpgvguMpGfqaHPjicRK.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Remove="Views\AlertView.xaml" />
     <Page Remove="Views\AvatarView.xaml" />
     <Page Remove="Views\BadgeView.xaml" />
@@ -32,7 +40,6 @@
     <Page Remove="Views\CheckBoxView.xaml" />
     <Page Remove="Views\IconView.xaml" />
     <Page Remove="Views\InputView.xaml" />
-    <Page Remove="Views\MainWindow.xaml" />
     <Page Remove="Views\RadioButtonView.xaml" />
     <Page Remove="Views\SelectView.xaml" />
     <Page Remove="Views\SpinView.xaml" />
@@ -60,6 +67,34 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\iconfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\alter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\KDpgvguMpGfqaHPjicRK.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\KDpgvguMpGfqaHPjicRK.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\KDpgvguMpGfqaHPjicRK.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\NavigationComponent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
