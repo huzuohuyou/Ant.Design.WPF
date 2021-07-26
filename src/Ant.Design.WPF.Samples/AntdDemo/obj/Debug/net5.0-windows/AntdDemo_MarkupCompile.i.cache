@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\
+D:\GitHub\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\obj\Debug\net5.0-windows\
 AntdDemo
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\Github\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\App.xaml
-61941818657
+D:\GitHub\Ant.Design.WPF\src\Ant.Design.WPF.Samples\AntdDemo\App.xaml
+17-1873285155
 
-18-101144776
-203-569361218
-Themes\CodeBox.xaml;Themes\Generic.xaml;Views\AlertComponent.xaml;Views\HeaderComponent.xaml;Views\HelloAntdComponent.xaml;Views\NavigationComponent.xaml;
+40-1734848297
+203-1772877297
+Themes\CodeBox.xaml;Themes\Generic.xaml;Views\AlertComponent.xaml;Views\AvatarComponent.xaml;Views\ButtonComponent.xaml;Views\CheckBoxComponent.xaml;Views\HeaderComponent.xaml;Views\HelloAntdComponent.xaml;Views\IconComponent.xaml;Views\InputComponent.xaml;Views\NavigationComponent.xaml;Views\RadioButtonComponent.xaml;Views\SelectComponent.xaml;Views\SpinComponent.xaml;Views\SwitchComponent.xaml;Views\TagComponent.xaml;Views\ToolTipComponent.xaml;
 
-True
+False
 

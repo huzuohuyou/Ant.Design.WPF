@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="AntdDemo.Views.TagView"
+﻿<UserControl x:Class="AntdDemo.Views.TagComponent"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -46,7 +46,7 @@
                                 <Antd:Tag>Tag 1</Antd:Tag>
                                 <Antd:Tag>Link</Antd:Tag>
                                 <Antd:Tag Closable="True">Tag 2</Antd:Tag>
-                                <Antd:Tag Closable="True" cal:Message.Attach="[Event Closing] = [Action Closing($source, $eventArgs)]">Prevent Default</Antd:Tag>
+                                <!--<Antd:Tag Closable="True" >Prevent Default</Antd:Tag>-->
                             </WrapPanel>
                         </Controls:CodeBox.Content>
                         <Controls:CodeBox.Code>

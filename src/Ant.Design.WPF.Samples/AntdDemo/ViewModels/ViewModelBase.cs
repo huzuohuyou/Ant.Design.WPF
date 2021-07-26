@@ -43,7 +43,6 @@ namespace AntdDemo.ViewModels
             DialogService = dialogService;
             EventAggregator = eventAggregator;
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
-            PrismRegister.RegisterViewWithRegion(regionManager, assemblyName);
         }
         #endregion
 

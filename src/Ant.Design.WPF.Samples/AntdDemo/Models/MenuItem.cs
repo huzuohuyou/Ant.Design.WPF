@@ -7,5 +7,27 @@
         public string Name { get; set; }
         public int Count { get; set; }
         public string BackColor { get; set; }
+        public bool IsEnabled { get; set; } = true;
+        public string Visibility
+        {
+            get
+            {
+                if (IsEnabled)
+                    return "Visibility";
+                else
+                    return "Collapsed";
+            }
+        }
+
+        public string UnVisibility
+        {
+            get
+            {
+                if (!IsEnabled)
+                    return "Visibility";
+                else
+                    return "Collapsed";
+            }
+        }
     }
 }

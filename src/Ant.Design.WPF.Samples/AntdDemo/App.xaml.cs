@@ -29,22 +29,10 @@ namespace AntdDemo
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
-            PrismRegister.RegisterTypes(containerRegistry, assemblyName);
+            PrismRegister.ExecureRegister(containerRegistry, assemblyName);
             //RegisterViewWithRegion(containerRegistry);
         }
 
-        private void RegisterViewWithRegion(IContainerRegistry containerRegistry) {
-            var conterEx = containerRegistry as IContainerExtension;
-            var regionManager = conterEx.Resolve<IRegionManager>();
-
-            Assembly serviceAss = Assembly.Load("AntdDemo");
-            Type[] serviceTypes = serviceAss.GetTypes();
-
-            var contents = serviceTypes.ToList().Where(r => r.Name.EndsWith("Component"));
-            foreach (var item in contents)
-            {
-                regionManager.RegisterViewWithRegion(item.Name, item);
-            }
-        }
+       
     }
 }
