@@ -17,7 +17,7 @@ namespace AntdDemo.ViewModels
         public IRegionNavigationJournal Journal { get; set; }
         public IRegionManager RegionManager { get; set; }
         public IDialogService DialogService { get; set; }
-        public bool KeepAlive => throw new NotImplementedException();
+        public bool KeepAlive =>true;
 
         private bool _isCanExcute;
         public bool IsCanExcute

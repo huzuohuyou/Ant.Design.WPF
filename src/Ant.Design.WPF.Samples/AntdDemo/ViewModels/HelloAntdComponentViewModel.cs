@@ -1,13 +1,12 @@
-﻿using AntdDemo.Views;
+﻿using AntdDemo.EventAggregators;
 using Prism.Events;
 using Prism.Regions;
 using Prism.Services.Dialogs;
 using System;
 using System.Linq;
 using System.Reflection;
-using MicrosoftToDO.Common;
-using AntdDemo.EventAggregators;
-
+using System.Windows.Controls;
+using MenuItem = MicrosoftToDO.Common.MenuItem;
 namespace AntdDemo.ViewModels
 {
     public class HelloAntdComponentViewModel : ViewModelBase
@@ -28,7 +27,11 @@ namespace AntdDemo.ViewModels
             Type[] serviceTypes = serviceAss.GetTypes();
             var type = serviceTypes.ToList().FirstOrDefault(r => r.Name.EndsWith(menuItem.Code));
             if (type != null)
+            {
                 RegionManager.RegisterViewWithRegion("ControlDetailComponent", type);
+                var view = RegionManager.Regions["ControlDetailComponent"].Views.FirstOrDefault(r=>$@"{(r as UserControl).Name}Component".Equals(type.Name));
+                RegionManager.Regions["ControlDetailComponent"].Activate(view);
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
         public string Code { get; set; }
         public string Name { get; set; }
         public int Count { get; set; }
-        public string BackColor { get; set; }
+        public string BackColor { get; set; } = "#1890ff";
         public bool IsEnabled { get; set; } = true;
         public string Visibility
         {
