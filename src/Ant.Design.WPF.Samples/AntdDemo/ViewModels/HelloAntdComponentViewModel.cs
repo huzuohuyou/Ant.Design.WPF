@@ -29,7 +29,7 @@ namespace AntdDemo.ViewModels
             if (type != null)
             {
                 RegionManager.RegisterViewWithRegion("ControlDetailComponent", type);
-                var view = RegionManager.Regions["ControlDetailComponent"].Views.FirstOrDefault(r=>$@"{(r as UserControl).Name}Component".Equals(type.Name));
+                var view = RegionManager.Regions["ControlDetailComponent"].Views.FirstOrDefault(r=>(r as UserControl).ToString().EndsWith(type.Name));
                 RegionManager.Regions["ControlDetailComponent"].Activate(view);
             }
         }
