@@ -6,7 +6,6 @@
              xmlns:Antd="clr-namespace:Antd.Controls;assembly=antd"
              xmlns:Controls="clr-namespace:AntdDemo.Controls"
              mc:Ignorable="d"
-             x:Name="Button"
              d:DesignHeight="600"
              d:DesignWidth="930">
     <ScrollViewer>
